@@ -1,0 +1,24 @@
+{
+  "name": "golddigger",
+  "version": "1.0.0",
+  "description": "An online portal to buy gold",
+  "homepage": "https://github.com/JatinSatare24/GoldDigger#readme",
+  "bugs": {
+    "url": "https://github.com/JatinSatare24/GoldDigger/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JatinSatare24/GoldDigger.git"
+  },
+  "license": "ISC",
+  "author": "Jatin Satare",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
