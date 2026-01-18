@@ -7,12 +7,10 @@
 * **Indian Market Price Tracking**: Specialized logic to fetch and display gold prices per gram, tailored to current Indian market fluctuations.
 * **Dynamic Price Generation**: Implements a backend algorithm to simulate live market volatility by fetching randomized per-gram price data.
 * **Custom Static Server**: A hand-coded file-serving utility that manages HTML, CSS, and JS assets with precise MIME type handling.
-* **Secure Data Handling**: Integrated input sanitization to protect against XSS attacks during asset "digging" and data entry.
 
 ## 🛠️ Tech Stack
 
 * **Backend**: Node.js (Core `http` module) — strictly no frameworks to showcase deep technical understanding.
 * **Frontend**: Vanilla JavaScript (ES6+), CSS3 (Flexbox/Grid), and Semantic HTML5.
 * **Asynchronous I/O**: `fs/promises` for non-blocking data persistence.
-* **Security**: `sanitize-html` for safe user-input processing.
 
