@@ -1,23 +1,18 @@
-# GoldDigger
+# Gold Digger 💰
 
-GoldDigger is a simple full-stack Node.js app that simulates live gold price updates and calculates how much gold (in ounces) a user can buy based on an investment amount.
+**Gold Digger** is a full-stack financial tracking application designed to monitor gold prices specifically for the Indian market. Built as a solo project for the Scrimba curriculum, it demonstrates a mastery of the request-response lifecycle by delivering real-time (simulated) market data through a custom-built Node.js architecture.
 
-The project focuses on understanding core frontend–backend communication without using frameworks.
+## 🚀 Key Features
 
-## Features
+* **Indian Market Price Tracking**: Specialized logic to fetch and display gold prices per gram, tailored to current Indian market fluctuations.
+* **Dynamic Price Generation**: Implements a backend algorithm to simulate live market volatility by fetching randomized per-gram price data.
+* **Custom Static Server**: A hand-coded file-serving utility that manages HTML, CSS, and JS assets with precise MIME type handling.
+* **Secure Data Handling**: Integrated input sanitization to protect against XSS attacks during asset "digging" and data entry.
 
-- Simulated live gold price (updates every 2 seconds)
-- Backend API built using Node.js HTTP module
-- Vanilla JavaScript frontend
-- Investment calculation based on current gold price
-- Modal dialog to show investment summary
+## 🛠️ Tech Stack
 
-## Tech Stack
-
-- HTML, CSS, JavaScript
-- Node.js (no Express)
-
-## API
-
-**GET /api**
+* **Backend**: Node.js (Core `http` module) — strictly no frameworks to showcase deep technical understanding.
+* **Frontend**: Vanilla JavaScript (ES6+), CSS3 (Flexbox/Grid), and Semantic HTML5.
+* **Asynchronous I/O**: `fs/promises` for non-blocking data persistence.
+* **Security**: `sanitize-html` for safe user-input processing.
 
