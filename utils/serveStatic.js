@@ -19,6 +19,8 @@ export async function serveStatic(req, res, __dirname) {
 
     const contentType = getContentType(ext)
 
+    console.log(`extension of the file: ${ext} and contentType: ${contentType}`)
+
     try {
         const content = await fs.readFile(filePath)
         sendResponse(res, 200, contentType, content)

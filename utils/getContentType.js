@@ -1,6 +1,7 @@
 import { type } from "node:os"
 
 export function getContentType(ext) {
+  console.log(`Inside getContentType`)
 
   const types = {
     ".js": "text/javascript",
@@ -12,6 +13,6 @@ export function getContentType(ext) {
     ".gif": "image/gif",
     ".svg": "image/svg+xml"
   }
-  
- return types[ext.toLowerCase()] || 'text/html'
+
+  return types[ext.toLowerCase()] || 'text/html'
 }

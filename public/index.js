@@ -9,9 +9,14 @@ const dialog = document.getElementById('dialog')
 let goldPrice = ''
 
 async function fetchGoldPrice() {
+
     try {
+
+        console.log(`Fetching gold price`)
         const res = await fetch("/api");
+        console.log('response:', res)
         const data = await res.json();
+        console.log('data in json:', data)
         goldPrice = data.price
         priceDisplay.textContent = goldPrice;
     } catch (err) {
@@ -23,7 +28,7 @@ async function fetchGoldPrice() {
 fetchGoldPrice();
 
 // then update every 2 seconds
-setInterval(fetchGoldPrice, 4000);
+setInterval(fetchGoldPrice, 10000);
 
 investBtn.addEventListener('click', async (e) => {
     e.preventDefault()
